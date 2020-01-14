@@ -4,5 +4,9 @@
     "hash": "194c0d655a25369a83f5ed483c8297975225ca62eaf4099ebc604e8088748205",
     "extract_to": "bin",
     "env_add_path": "bin",
-    "homepage": "https://buildpacks.io/"
+    "homepage": "https://github.com/buildpacks/pack/releases/latest",
+    "checkver": "<h1.*>pack v([\\d.]+)</h1>",
+    "autoupdate": {
+        "url": "https://github.com/buildpacks/pack/releases/download/v$version/pack-v$version-windows.zip"
+    }
 }
